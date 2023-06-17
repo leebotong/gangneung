@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>로그인 | 강릉바우길</title>
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, target-densitydpi=medium-dpi">
+<link href="../css/content.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<p class="skip"><a href="#container">본문 바로가기</a></p>
+	<section id="wrapper" class="wrapper">
+		<header>
+			<button type="button" class="btPrev">이전</button>
+			<h1 class="titSub">회원 로그인</h1>
+		</header>
+	
+		<div id="container" class="container">
+			<!-- start of contents -->
+			<div class="loginArea">
+				<ul class="inpList">
+					<li>
+						<input type="text" title="아이디를 입력하세요" id="inpID" required>
+						<label for="inpID">아이디<span>를 입력하세요</span></label>
+						<button type="button" class="icDel">삭제</button>
+					</li>
+					<li>
+						<input type="password" title="비밀번호를 입력하세요" id="inpPW" required>
+						<label for="inpPW">비밀번호<span>를 입력하세요</span></label>
+						<button type="button" class="icDel">삭제</button>
+					</li>
+				</ul>
+				<p class="loginCheck"><span class="frmInp txt"><input type="checkbox" id="chkLoginKeep" checked><label for="chkLoginKeep">로그인 상태유지</label></span></p>
+				<button type="button" class="btnDefault btnL action" disabled>로그인</button>
+			</div>
+
+			<div class="loginBtns">
+				<a href="#" role="button">아이디 찾기</a>
+				<a href="#" role="button">비밀번호 찾기</a>
+				<a href="#" role="button">회원가입</a>
+			</div>
+
+			<h2 class="titDep-02">간편 로그인</h2>
+			<ul class="easyLogin">
+				<li><a href="#" role="button" class="btGoogle"><span>구글 아이디로 로그인</span></a></li>
+				<li><a href="#" role="button" class="btApple"><span>애플 아이디로 로그인</span></a></li>
+				<li><a href="#" role="button" class="btNaver"><span>네이버 아이디로 로그인</span></a></li>
+				<li><a href="#" role="button" class="btKakao"><span>카카오 아이디로 로그인</span></a></li>
+			</ul>
+
+			<!-- // end of contents -->
+		</div><!-- //container -->
+	
+	
+	</section>
+	
+	<!-- 토스트팝업 -->
+	<div class="toastPopup" style="display:block"><!-- 토스트팝업 호출 시 display:block 처리 -->
+		<p class="txt">로그인에 실패했습니다. <br>아이디와 비밀번호를 확인해 주세요.</p>
+		<button type="button" class="close"></button>
+	</div>
+	<!-- //토스트팝업 -->
+	
+</body>
+
+
+<script src="../js/swiper.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+	var swiper = new Swiper(".swiperMain01", {
+		slidesPerView: 2,
+		spaceBetween: 13,
+		pagination: {
+		el: ".swiper-pagination",
+		clickable: true,
+		},
+	});
+</script>
+
+</html>
+

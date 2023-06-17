@@ -1,0 +1,104 @@
+@charset "utf-8";
+
+	$body_color:#fff;
+
+	//color
+	$default_col:#606060; 
+	
+	
+	$col_g100:#F6F6F4;
+	$col_g200:#7D7D7D;
+	$col_g300:#D8D8D8;
+	$col_g400:#cecece;
+	$col_g500:#666;
+	$col_g600:#c8c8c8;
+	$col_g700:#ececec;
+	$col_g800:#474747;
+	$col_g900:#707070;
+	$col_g1000:#222;
+	$col_g1100:#3324240F;
+	
+	$col_gr100:#2AC79B;
+	$col_gr200:#194643;
+	$col_b100:#000873;
+	$col_b200:#6CBEEB;
+	$col_b300:#008AD6;
+
+	$col_white:#fff;
+	$col_black:#000;
+	$col_point1:#2CA8EC;
+	$col_point2:#C35252;
+	$col_point3:#FF6D6D;
+
+	$col_b05:rgba($col_black, 0.05);
+	$col_b07:rgba($col_black, 0.07);
+	$col_b40:rgba($col_black, 0.4);
+	$col_b50:rgba($col_black, 0.5);
+	$col_b60:rgba($col_black, 0.6);
+	$col_b70:rgba($col_black, 0.7);
+	$col_b80:rgba($col_black, 0.8);
+	$col_b90:rgba($col_black, 0.9);
+
+	//font
+	$default_font:NotoSansKR, -apple-system,BlinkMacSystemFont,Open Sans,Helvetica Neue,sans-serif;
+	$default_weight:400;
+
+	$weight100:100;
+	$weight200:200;
+	$weight300:300;
+	$weight400:400;
+	$weight500:500;
+	$weight600:600;
+	$weight700:700;
+	$weight800:800;
+	$weight900:900;
+	
+	//url
+	$img_url:"../images";
+
+	//media query size
+	$sizeXS:320px;
+	$sizeS:360px;
+	
+	//extend	
+	%hidden{overflow:hidden;position:absolute;width:1px;height:1px;margin:-1px !important;clip:rect(0 0 0 0)}
+	%textHidden{overflow:hidden;text-indent:-9999px}
+	%size14{font-size:1.4rem;line-height:1.25}
+	
+	%box_shadow1{box-shadow:0 3px 8px rgba($col_black, 0.1)} //아래 셰도우
+	%box_shadow2{box-shadow:0 -3px 8px rgba($col_black, 0.1)}  //위 셰도우
+	%box_shadow3{box-shadow:5px 3px 8px rgba($col_black, 0.05)}  //사방 셰도우
+	
+	//mixin
+	
+	$font-body:10px;
+	
+	@function rem($val) { 
+		@return $val/$font-body * 1rem;		
+	}
+	
+	
+	@mixin prefix($property, $value) {
+		-webkit-#{$property}:$value;
+		-moz-#{$property}:$value;
+		#{$property}:$value;
+	}
+
+	@mixin pseudo($width, $height) {
+		content:'';display:block;position:absolute;top:50%;left:50%;width:$width;height:$height;margin-top:-$height/2;margin-left:-$width/2;
+	}
+
+	@mixin ellipsis($line, $height) {
+		@if ($line == 1) { 
+			overflow: hidden; 
+			text-overflow: ellipsis; 
+			white-space: nowrap; 
+		} @else { 
+			display: -webkit-box; 
+			overflow: hidden; 
+			text-overflow: ellipsis; 
+			-webkit-box-orient: vertical; 
+			-webkit-line-clamp: $line; 
+			height:$height;
+		} 
+	}

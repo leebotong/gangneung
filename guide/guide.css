@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+/* Common */
+html{font-size:10px}
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select,div,figure,article,header,nav,footer,section,input,textarea,button{margin:0;padding:0;color:$default_col;font-family:$default_font;font-weight:400;font-size:15rem;line-height:1.53;letter-spacing:-0.01em;box-sizing:border-box;word-break:keep-all;word-wrap:break-word;white-space:normal;-webkit-text-size-adjust:100%;text-size-adjust:100%;max-height:1000000px}
+h1,h2,h3,h4,h5,h6{font-weight:400}
+
+
+.guideHeader{position:relative;min-width:1500px;width:100%}
+.guideHeader h1{padding:20px 20px;font-size:30px;color:#000;font-weight:700;line-height:1}
+.topBtn{position:absolute;top:20px;right:30px;}
+.topBtn a{position:relative;display:inline-block;margin-left:10px;padding:5px 15px;font-size:16px;}
+.topBtn a:after{content:'';position:absolute;top:13px;right:0;width:8px;height:8px;border:solid #606060;border-width:1px 1px 0 0;transform:rotate(45deg);}
+.guideHeader nav{position:relative;padding:0}
+.guideHeader nav .gnbDep1{height:60px;padding:0 20px;background:#1d68dc}
+.guideHeader nav .gnbDep1 a{display:inline-block;padding:0 30px;height:60px;line-height:60px;color:#fff;font-size:20px;vertical-align:top}
+.guideHeader nav .gnbDep1 a.navON{height:50px;margin-top:10px;color:#000;line-height:50px;border-radius:10px 10px 0 0;font-weight:700;background:#fff}
+.guideHeader nav .gnbDep2{margin:10px 0 0 35px}
+.guideHeader nav .gnbDep2 a{position:relative;display:inline-block;padding:5px 15px;font-size:15px}
+.guideHeader nav .gnbDep2 a:before{content:'';display:block;position:absolute;top:8px;bottom:8px;left:0;width:1px;background:#ddd}
+.guideHeader nav .gnbDep2 a:first-child:before{display:none}
+.guideHeader nav .gnbDep2 a.navON{font-weight:700;font-size:17px}
+.guideHeader nav.guide .gnbDep1{overflow:auto;white-space:nowrap}
+.guideHeader nav.guide .gnbDep1.pcGnb{overflow:hidden}
+
+.guideContents{padding:25px 20px 30px 20px}
+.guideContents .guideTit3{margin:50px 0 10px;font-size:20px;font-weight:600}
+.pcGuideCont{width:1136px;padding:0;margin:25px 20px 30px 20px}
+
+.guideTit2, .guideTit3{line-height:1}
+.guideTit2{margin-bottom:30px;color:#000;font-size:32px;font-weight:600}
+.guideTit3{margin:50px 0 10px;color:#444;font-size:18px;font-weight:500}
+.guideTit4{margin:20px 0 10px;color:#444;font-size:15px;font-weight:500}
+.guideList li{position:relative;min-height:16px;padding:0 0 5px 12px;line-height:1.2}
+.guideList li:before{content:'';display:block;position:absolute;top:5px;left:0;width:3px;height:3px;border-radius:3px;background:#888}
+
+.htmlList{width:100%;border-top:1px solid #ccc;border-collapse:separate;border-spacing:0}
+.htmlList th, .htmlList td{padding:10px 10px;color:#111;border-bottom:1px solid #ccc;border-left:1px solid #ccc;font-size:15px;}
+.htmlList th:first-child, .htmlList td:first-child{border-left:none}
+.htmlList th{font-weight:500;background:#eee}
+.htmlList td{text-align:center}
+.htmlList td a{text-decoration:underline}
+.htmlList tbody tr:hover{background:#f4f7f8}
+.htmlList tr.bgFL td{background:#f2eeef}
+.htmlList tr.bgTxt td{background:#ccdbef}
+.htmlList tr.del td{background:#ddd}
+.htmlList tr.del td{text-decoration:line-through}
+.htmlList tr.del td:last-child{text-decoration:none}
+.htmlList tr.cancel td{text-decoration:line-through}
+
+.tleft{text-align:left !important}
+
+.pcHead{position:fixed;top:0;left:0;width:100%;min-width:1600px;background:#fff;z-index:100}
+.pcHead + .guideContents{padding-top:190px;min-width:1600px}
+.pcHead nav.guide .gnbDep1{overflow:visible}
+.pcHead + .pcGuideCont{min-width:auto}

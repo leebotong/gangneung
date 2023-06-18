@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>강릉바우길</title>
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, target-densitydpi=medium-dpi">
+<link href="../css/content.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<p class="skip"><a href="#container">본문 바로가기</a></p>
+	<section id="wrapper" class="wrapper">
+		<header>
+			<button type="button" class="btPrev">이전</button>
+			<h1 class="titSub">회원탈퇴</h1>
+			<div class="topUtil">
+				<button type="button" class="btSos">SOS</button>
+				<button type="button" class="btSearch">검색</button>
+			</div>
+		</header>
+
+		<div id="container" class="container leaveCont">
+			<!-- start of contents -->
+			<p class="leaveTxt"><span>걷는 길</span> 서비스를 <br>탈퇴하시나요?</p>
+			<ul class="leaveNoti">
+				<li>회원님의 모든 콘텐츠와 활동 기록, 쿠폰, 사용 내역 등이 삭제됩니다.</li>
+				<li>삭제된 정보는 복구가 불가능 합니다.</li>
+			</ul>
+			<span class="frmInp"><input type="checkbox" id="chkAgree01"><label for="chkAgree01">안내사항을 모두 확인하였으며, 이에 동의합니다.</label></span>
+
+			<ul class="inpList">
+				<li class="multiForm">
+					<div class="selectWrap">
+						<select id="form01">
+							<option>탈퇴 사유를 선택해주세요.</option>
+							<option>자주사용하지 않아요</option>
+						</select>
+					</div>
+					<label for="form01">탈퇴하시는 이유를 알려주세요.</label>
+				</li>
+				<li class="inpCertTime">
+					<input type="password" title="현재 비밀번호를 입력해주세요." id="form02" required>
+					<label for="form02">현재 비밀번호<span>를 입력해주세요</span></label>
+				</li>
+			</ul>
+			<div class="btnWrap">
+				<button class="btnDefault btnL action" disabled>확인</button>
+			</div>
+			<!-- // end of contents -->
+		</div>
+	</section>
+	
+</body>
+</html>

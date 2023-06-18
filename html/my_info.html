@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>강릉바우길</title>
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, target-densitydpi=medium-dpi">
+<link href="../css/content.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<p class="skip"><a href="#container">본문 바로가기</a></p>
+	<section id="wrapper" class="wrapper">
+		<header>
+			<button type="button" class="btPrev">이전</button>
+			<h1 class="titSub">내정보</h1>
+			<div class="topUtil">
+				<button type="button" class="btSos">SOS</button>
+				<button type="button" class="btSearch">검색</button>
+			</div>
+		</header>
+
+		<div id="container" class="container">
+			<!-- start of contents -->
+			<ul class="inpList">
+				<li>
+					<input type="text" title="이름" id="fomr01" required readonly value="홍길동">
+					<label for="fomr01">이름</label>
+				</li>
+				<li>
+					<input type="tel" title="아이디" id="fomr02" required readonly value="hong98">
+					<label for="fomr02">휴대폰 번호</label>
+				</li>
+				<li>
+					<input type="tel" title="닉네임" id="fomr03" required readonly value="01022223333">
+					<label for="fomr03">닉네임</label>
+					<a href="#" class="btnLineGray">변경</a>
+				</li>
+				<li>
+					<input type="tel" title="휴대폰" id="fomr04" required readonly value="01022223333">
+					<label for="fomr04">휴대폰</label>
+					<a href="#" class="btnLineGray">변경</a>
+				</li>
+			</ul>
+
+			<h2 class="titDep-02">추가정보(선택)</h2>
+			<ul class="inpList">
+				<li>
+					<div class="selectWrap">
+						<select id="form01">
+							<option>대한민국</option>
+						</select>
+					</div>
+					<label for="fomr01">국적</label>
+				</li>
+				<li class="multiForm">
+					<label>성별을 선택하세요</label>
+					<span class="btnRadio">
+						<span><input type="radio" id="male" name="radiobutton" value="남자"><label for="male">남자</label></span>
+						<span><input type="radio" id="female" name="radiobutton" value="여자"><label for="female">여자</label></span>
+					</span>
+				</li>
+				<li class="multiForm">
+					<label>생년월일을 입력하세요</label>
+					<span class="btnRadio">
+						<span><input type="radio" id="male" name="radiobutton" value="남자" checked><label for="male">남자</label></span>
+						<span><input type="radio" id="female" name="radiobutton" value="여자"><label for="female">여자</label></span>
+					</span>
+				</li>
+			</ul>
+			<!-- // end of contents -->
+		</div>
+	</section>
+	
+</body>
+</html>

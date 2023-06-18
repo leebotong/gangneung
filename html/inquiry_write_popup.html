@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>강릉바우길</title>
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, target-densitydpi=medium-dpi">
+<link href="../css/content.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<p class="skip"><a href="#container">본문 바로가기</a></p>
+	<section id="wrapper" class="wrapper">
+		<header>
+			<button type="button" class="btPrev">이전</button>
+			<h1 class="titSub">문의내역</h1>
+			<div class="topUtil">
+				<button type="button" class="btSos">SOS</button>
+				<button type="button" class="btSearch">검색</button>
+			</div>
+		</header>
+
+		<div id="container" class="container">
+			<!-- start of contents -->
+			<div class="inquiryCont">
+				<div class="inquiryWrite">
+					<input type="text" title="문의제목을 입력해주세요" placeholder="문의 제목 입력">
+					<div class="textArea">
+							<textarea title="문의내용을 작성해주세요" id="form01" placeholder="문의 내용을 작성해주세요."></textarea>
+							<label for="form01">문의내용</label>
+							<div class="maxText">25 / 500</div>
+					</div>
+					<div class="btnWrap">
+						<button class="btnDefault btnL btDark">삭제하기</button>
+						<button class="btnDefault btnL action">등록하기</button>
+					</div>
+				</div>
+
+				<div class="qnaNoti">
+					<h2 class="titDep-02">Q&amp;A 작성 유의사항</h2>
+					<ul class="listType">
+						<li>서비스 이용 문의와 관련 없는 비방/욕설/명예훼손성 게시글과 관련 없는 광고글 등 부적절한 게시글 등록 시 글쓰기 제한 및 게시글이 삭제 조치 될 수 있습니다.</li>
+						<li>전화번호, 이메일 등 개인 정보가 포함된 글 작성이 필요한 경우 판매자만 볼 수 있도록 비밀글로 문의해 주시기 바랍니다.</li>
+					</ul>
+				</div>
+			</div>
+			<!-- // end of contents -->
+		</div>
+	</section>
+
+	<!-- 레이어팝업 -->
+	<div class="layPop layBtm" style="display:block">
+		<div class="layInner">
+			<div class="layCont">
+				<div class="txtAlert">문의 삭제 시 복구가 불가능합니다. <br>정말 삭제하시겠습니까?</div>
+				<div class="btnArea">
+					<button type="button" class="btnDefault btnL btDark">아니오</button>
+					<button type="button" class="btnDefault btnL action">예</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //레이어팝업 -->
+
+	<div class="dimmed" style="display:block;"></div><!-- 레이어팝업 띄울때 display:none 처리 -->
+	
+</body>
+</html>

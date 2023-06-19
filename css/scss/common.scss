@@ -136,7 +136,7 @@ p.listStar{position:relative;padding:0 0 0 12px;color:$col_b60;font-size:rem(13p
 }
 
 /* form */
-input[type=text], input[type=password], input[type=tel], input[type=number], input[type=search], input[type=date], input[type=email], input[type=url]{display:block;width:100%;height:45px;padding:0 14px;color:$default_col;font-size:inherit;font-family:inherit;line-height:43px;border-radius:5px;border:1px solid $col_g200;background:$col_white}
+input[type=text], input[type=password], input[type=tel], input[type=number], input[type=search], input[type=date], input[type=email], input[type=url]{display:block;width:100%;height:45px;padding:0 14px;color:$default_col;font-size:inherit;font-family:inherit;line-height:43px;border-radius:5px;border:1px solid $col_g600;background:$col_white}
 input[type=text]:focus, input[type=password]:focus, input[type=tel]:focus, input[type=number]:focus, input[type=search]:focus, input[type=date]:focus, input[type=email]:focus, input[type=url]:focus{border-color:$col_point1;outline:0}
 input[type=text]:read-only, input[type=password]:read-only, input[type=tel]:read-only, input[type=number]:read-only, input[type=search]:read-only, input[type=date]:read-only, input[type=email]:read-only, input[type=url]:read-only{color:$col_g500;border-color:$col_g300;background:$col_g700}
 input[type=text]:disabled, input[type=password]:disabled, input[type=tel]:disabled, input[type=number]:disabled, input[type=search]:disabled, input[type=date]:disabled, input[type=email]:disabled, input[type=url]:disabled{color:$col_g100;border-color:$col_g300;background:$col_g700}
@@ -219,7 +219,7 @@ textarea::placeholder{font-size:rem(14px)}
 			}
 		}
 		.icDel{@extend %textHidden;display:none;position:absolute;top:13px;right:13px;width:19px;height:19px;background:url(../images/common/spr_icon.svg) no-repeat -72px 0 / 250px auto}
-		
+		.txtPlace{margin:5px 0 15px;color:$col_r100;font-size:9px;}
 		&.inpCert{display:flex;width:100%;
 			.certWrap{width:100%;position:relative;
 				

@@ -20,7 +20,7 @@
 			</div>
 		</header>
 
-		<div id="container" class="container">
+		<div id="container" class="container myInfoCont">
 			<!-- start of contents -->
 			<ul class="inpList">
 				<li>
@@ -45,29 +45,48 @@
 
 			<h2 class="titDep-02">추가정보(선택)</h2>
 			<ul class="inpList">
-				<li>
+				<li class="inpWrap">
+					<label for="form01">국적</label>
 					<div class="selectWrap">
 						<select id="form01">
 							<option>대한민국</option>
 						</select>
+
 					</div>
-					<label for="fomr01">국적</label>
 				</li>
-				<li class="multiForm">
+				<li class="inpWrap">
 					<label>성별을 선택하세요</label>
-					<span class="btnRadio">
-						<span><input type="radio" id="male" name="radiobutton" value="남자"><label for="male">남자</label></span>
-						<span><input type="radio" id="female" name="radiobutton" value="여자"><label for="female">여자</label></span>
-					</span>
+					<div class="btnInpWrap">
+						<span class="frmInp"><input type="radio" id="male" name="radioButton"><label for="male">남자</label></span>
+						<span class="frmInp"><input type="radio" id="female" name="radioButton"><label for="female">여자</label></span>
+					</div>
 				</li>
-				<li class="multiForm">
+				<li class="inpWrap">
 					<label>생년월일을 입력하세요</label>
-					<span class="btnRadio">
-						<span><input type="radio" id="male" name="radiobutton" value="남자" checked><label for="male">남자</label></span>
-						<span><input type="radio" id="female" name="radiobutton" value="여자"><label for="female">여자</label></span>
-					</span>
+					<div class="multiForm">
+						<div class="selectWrap">
+							<select id="form01" title="태어난 년도">
+								<option>1990</option>
+							</select>
+						</div>
+						<div class="selectWrap">
+							<select id="form01" title="태어난 월">
+								<option>01</option>
+							</select>
+						</div>
+						<div class="selectWrap">
+							<select id="form01" title="태어난 일자">
+								<option>01</option>
+							</select>
+						</div>
+					</div>
 				</li>
 			</ul>
+
+			<div class="btnWrap">
+				<a href="#">탈퇴하기</a>
+				<button type="button" class="btnDefault btnL action">수정완료</button>
+			</div>
 			<!-- // end of contents -->
 		</div>
 	</section>

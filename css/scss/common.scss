@@ -111,41 +111,6 @@ textarea::placeholder{font-size:rem(13px)}
 	}
 }
 
-/* form */
-input[type=text],input[type=password], input[type=search], input[type=number], input[type=tel]{width:100%;height:45px;padding:0 14px;line-height:43px;border:1px solid $col_g600;border-radius:3px;background:$col_white;
-	&::-webkit-search-decoration,
-  	&::-webkit-search-cancel-button,
-  	&::-webkit-search-results-button,
-  	&::-webkit-search-results-decoration{
-    	display: none;
-  	}
-}
-
-.selectWrap{position:relative;height:45px;
-	select{appearance:none;width:100%;border:none;height:43px;padding:0 14px;color:$col_b60;border-radius:5px;border:1px solid $col_g200;background:$col_white;}
-	&:after{@include pseudo(14px,14px);left:auto;margin-left:0;right:15px;width:6px;height:6px;margin-top:-6px;border:solid $col_black;border-width:0 1px 1px 0;@include prefix(transform,rotate(45deg));}
-}
-.searchWrap{position:relative;
-	input{padding-right:45px}
-	button{@extend %textHidden;position:absolute;top:0;right:0;width:45px;height:45px;
-		&:after{@include pseudo(25px,25px);background:url(../images/common/ico_search01.svg) no-repeat 0 0 / 25px auto}
-	}
-}
-
-//selectbox
-.laySelectbox{position:fixed;left:0;bottom:0;width:100%;max-height:calc(100vh - 67px);padding:16px 0 0 0;border-radius:18px 18px 0 0;animation-name:layBtm;animation-duration:1.5s;z-index:9999;box-shadow: 0px 10px 10px #000000;background:$col_white;
-	.selectInner{overflow:auto;max-height:calc(100vh - 83px);border-top:1px solid $col_g300;
-		.selectList{
-			> li{
-				> a{@include ellipsis(1, auto);display:block;padding:0 27px;color:$col_g1000;line-height:47px;border-top:1px solid $col_g300;font-weight:$weight500;font-size:rem(18px);
-					&.selON{background:$col_g1100}
-				}
-				&:first-child a{border-top:0}
-			}
-		}
-	}
-}
-
 /* tab */
 .tabArea{height:46px;margin:0 -23px;padding:0 3px;
 	.tabType01{display:flex;width:100%;
@@ -171,7 +136,7 @@ p.listStar{position:relative;padding:0 0 0 12px;color:$col_b60;font-size:rem(13p
 }
 
 /* form */
-input[type=text], input[type=password], input[type=tel], input[type=number], input[type=search], input[type=date], input[type=email], input[type=url]{display:block;width:100%;height:45px;padding:0 14px;color:$default_col;font-size:inherit;font-family:inherit;line-height:43px;border-radius:5px;border:1px solid $col_g600;background:$col_white}
+input[type=text], input[type=password], input[type=tel], input[type=number], input[type=search], input[type=date], input[type=email], input[type=url]{display:block;width:100%;height:45px;padding:0 14px;color:$default_col;font-size:inherit;font-family:inherit;line-height:43px;border-radius:5px;border:1px solid $col_g200;background:$col_white}
 input[type=text]:focus, input[type=password]:focus, input[type=tel]:focus, input[type=number]:focus, input[type=search]:focus, input[type=date]:focus, input[type=email]:focus, input[type=url]:focus{border-color:$col_point1;outline:0}
 input[type=text]:read-only, input[type=password]:read-only, input[type=tel]:read-only, input[type=number]:read-only, input[type=search]:read-only, input[type=date]:read-only, input[type=email]:read-only, input[type=url]:read-only{color:$col_g500;border-color:$col_g300;background:$col_g700}
 input[type=text]:disabled, input[type=password]:disabled, input[type=tel]:disabled, input[type=number]:disabled, input[type=search]:disabled, input[type=date]:disabled, input[type=email]:disabled, input[type=url]:disabled{color:$col_g100;border-color:$col_g300;background:$col_g700}
@@ -181,6 +146,14 @@ textarea{width:100%;height:44px;padding:11px 14px 12px;border-radius:10px;border
 }
 grammarly-extension{display:none}
 input[type=search]::-webkit-search-cancel-button{display:none}
+input[type=search]{
+	&::-webkit-search-decoration,
+  	&::-webkit-search-cancel-button,
+  	&::-webkit-search-results-button,
+  	&::-webkit-search-results-decoration{
+    	display: none;
+  	}
+}
 
 ::-webkit-input-placeholder{color:$col_b60;font-size:rem(14px);font-weight:$weight400}
 :-ms-input-placeholder{color:$col_b60;font-size:rem(14px);font-weight:$weight400}
@@ -234,8 +207,56 @@ textarea::placeholder{font-size:rem(14px)}
 }
 
 .inpList{
-	> li{margin-top:9px;
+	> li{position:relative;margin-top:9px;
 		&:first-child{margin-top:0}
+		label{position:absolute;top:0;left:0;display:block;width:100%;padding:0 13px;line-height:45px;color:$col_b60;font-size:rem(13px);transition:0.3s;box-sizing:border-box}
+		input{transition:0.3s;
+			&:not(:focus):valid, &:focus, &:read-only{padding-top:12px;
+				+ label{top:-9px;width:auto;color:$col_point1;font-size:rem(9px);
+					span{display:none}
+				}
+				~ .icDel{display:block}
+			}
+		}
+		.icDel{@extend %textHidden;display:none;position:absolute;top:13px;right:13px;width:19px;height:19px;background:url(../images/common/spr_icon.svg) no-repeat -72px 0 / 250px auto}
+		&.inpCert{display:flex;width:100%;
+			.certWrap{width:100%;position:relative;
+				
+			}
+			.btnM{flex:0 0 88px;margin:0 0 0 10px}
+		}
+		&.inpCertTime{
+			.certTime{position:absolute;top:12px;right:19px;color:$col_point3;font-size:rem(13px);font-weight:$weight500;}
+		}
+		&.inpWrap{
+			label{position:static;height:auto;margin-bottom:6px;padding:0;color:$col_point1;font-size:rem(12px);line-height:1.5}
+		}
 	}
 }
 
+.selectWrap{position:relative;height:45px;
+	select{appearance:none;width:100%;border:none;height:43px;padding:0 14px;color:$col_b60;border-radius:5px;border:1px solid $col_g200;background:$col_white;
+		&:focus{border-color:$col_point1;outline:0}
+	}
+	&:after{@include pseudo(14px,14px);left:auto;margin-left:0;right:15px;width:6px;height:6px;margin-top:-6px;border:solid $col_black;border-width:0 1px 1px 0;@include prefix(transform,rotate(45deg));}
+}
+.searchWrap{position:relative;
+	input{padding-right:45px}
+	button{@extend %textHidden;position:absolute;top:0;right:0;width:45px;height:45px;
+		&:after{@include pseudo(25px,25px);background:url(../images/common/ico_search01.svg) no-repeat 0 0 / 25px auto}
+	}
+}
+
+//selectbox
+.laySelectbox{position:fixed;left:0;bottom:0;width:100%;max-height:calc(100vh - 67px);padding:16px 0 0 0;border-radius:18px 18px 0 0;animation-name:layBtm;animation-duration:1.5s;z-index:9999;box-shadow: 0px 10px 10px #000000;background:$col_white;
+	.selectInner{overflow:auto;max-height:calc(100vh - 83px);border-top:1px solid $col_g300;
+		.selectList{
+			> li{
+				> a{@include ellipsis(1, auto);display:block;padding:0 27px;color:$col_g1000;line-height:47px;border-top:1px solid $col_g300;font-weight:$weight500;font-size:rem(18px);
+					&.selON{background:$col_g1100}
+				}
+				&:first-child a{border-top:0}
+			}
+		}
+	}
+}

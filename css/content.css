@@ -7,7 +7,7 @@
   margin: -1px !important;
   clip: rect(0 0 0 0); }
 
-.searchWrap button, #wrapper header .titMain a, #wrapper header .topUtil button, #wrapper header .btprev, #wrapper header .btPrev, nav > .inner > a, .menuList .closeNavi, .layPop.layCent .closeL, .frmFavo label, .inpList > li .icDel, .closeL, .topSearch > button, .inquiryCont .inquiryWrite .textArea textarea + label, .sightsList > ul > li .frmFavo label, .loginArea .inpList > li .icDel {
+.inpList > li .icDel, .searchWrap button, #wrapper header .titMain a, #wrapper header .topUtil button, #wrapper header .btprev, #wrapper header .btPrev, nav > .inner > a, .menuList .closeNavi, .layPop.layCent .closeL, .frmFavo label, .closeL, .topSearch > button, .inquiryCont .inquiryWrite .textArea textarea + label, .sightsList > ul > li .frmFavo label {
   overflow: hidden;
   text-indent: -9999px; }
 
@@ -43,7 +43,7 @@
   margin: -1px !important;
   clip: rect(0 0 0 0); }
 
-.searchWrap button, #wrapper header .titMain a, #wrapper header .topUtil button, #wrapper header .btprev, #wrapper header .btPrev, nav > .inner > a, .menuList .closeNavi, .layPop.layCent .closeL, .frmFavo label, .inpList > li .icDel, .closeL, .topSearch > button, .inquiryCont .inquiryWrite .textArea textarea + label, .sightsList > ul > li .frmFavo label, .loginArea .inpList > li .icDel {
+.inpList > li .icDel, .searchWrap button, #wrapper header .titMain a, #wrapper header .topUtil button, #wrapper header .btprev, #wrapper header .btPrev, nav > .inner > a, .menuList .closeNavi, .layPop.layCent .closeL, .frmFavo label, .closeL, .topSearch > button, .inquiryCont .inquiryWrite .textArea textarea + label, .sightsList > ul > li .frmFavo label {
   overflow: hidden;
   text-indent: -9999px; }
 
@@ -391,112 +391,6 @@ textarea::placeholder {
     margin-top: 10px;
     color: #000; }
 
-/* form */
-input[type=text], input[type=password], input[type=search], input[type=number], input[type=tel] {
-  width: 100%;
-  height: 45px;
-  padding: 0 14px;
-  line-height: 43px;
-  border: 1px solid #c8c8c8;
-  border-radius: 3px;
-  background: #fff; }
-  input[type=text]::-webkit-search-decoration, input[type=text]::-webkit-search-cancel-button, input[type=text]::-webkit-search-results-button, input[type=text]::-webkit-search-results-decoration, input[type=password]::-webkit-search-decoration, input[type=password]::-webkit-search-cancel-button, input[type=password]::-webkit-search-results-button, input[type=password]::-webkit-search-results-decoration, input[type=search]::-webkit-search-decoration, input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-results-button, input[type=search]::-webkit-search-results-decoration, input[type=number]::-webkit-search-decoration, input[type=number]::-webkit-search-cancel-button, input[type=number]::-webkit-search-results-button, input[type=number]::-webkit-search-results-decoration, input[type=tel]::-webkit-search-decoration, input[type=tel]::-webkit-search-cancel-button, input[type=tel]::-webkit-search-results-button, input[type=tel]::-webkit-search-results-decoration {
-    display: none; }
-
-.selectWrap {
-  position: relative;
-  height: 45px; }
-  .selectWrap select {
-    -webkit-appearance: none;
-       -moz-appearance: none;
-            appearance: none;
-    width: 100%;
-    border: none;
-    height: 43px;
-    padding: 0 14px;
-    color: rgba(0, 0, 0, 0.6);
-    border-radius: 5px;
-    border: 1px solid #7D7D7D;
-    background: #fff; }
-  .selectWrap:after {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 14px;
-    height: 14px;
-    margin-top: -7px;
-    margin-left: -7px;
-    left: auto;
-    margin-left: 0;
-    right: 15px;
-    width: 6px;
-    height: 6px;
-    margin-top: -6px;
-    border: solid #000;
-    border-width: 0 1px 1px 0;
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg); }
-
-.searchWrap {
-  position: relative; }
-  .searchWrap input {
-    padding-right: 45px; }
-  .searchWrap button {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 45px;
-    height: 45px; }
-    .searchWrap button:after {
-      content: '';
-      display: block;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 25px;
-      height: 25px;
-      margin-top: -12.5px;
-      margin-left: -12.5px;
-      background: url(../images/common/ico_search01.svg) no-repeat 0 0/25px auto; }
-
-.laySelectbox {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  max-height: calc(100vh - 67px);
-  padding: 16px 0 0 0;
-  border-radius: 18px 18px 0 0;
-  -webkit-animation-name: layBtm;
-          animation-name: layBtm;
-  -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s;
-  z-index: 9999;
-  -webkit-box-shadow: 0px 10px 10px #000000;
-          box-shadow: 0px 10px 10px #000000;
-  background: #fff; }
-  .laySelectbox .selectInner {
-    overflow: auto;
-    max-height: calc(100vh - 83px);
-    border-top: 1px solid #D8D8D8; }
-    .laySelectbox .selectInner .selectList > li > a {
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-      display: block;
-      padding: 0 27px;
-      color: #222;
-      line-height: 47px;
-      border-top: 1px solid #D8D8D8;
-      font-weight: 500;
-      font-size: 1.8rem; }
-      .laySelectbox .selectInner .selectList > li > a.selON {
-        background: #3324240F; }
-    .laySelectbox .selectInner .selectList > li:first-child a {
-      border-top: 0; }
-
 /* tab */
 .tabArea {
   height: 46px;
@@ -570,7 +464,7 @@ input[type=text], input[type=password], input[type=tel], input[type=number], inp
   font-family: inherit;
   line-height: 43px;
   border-radius: 5px;
-  border: 1px solid #c8c8c8;
+  border: 1px solid #7D7D7D;
   background: #fff; }
 
 input[type=text]:focus, input[type=password]:focus, input[type=tel]:focus, input[type=number]:focus, input[type=search]:focus, input[type=date]:focus, input[type=email]:focus, input[type=url]:focus {
@@ -616,6 +510,9 @@ grammarly-extension {
   display: none; }
 
 input[type=search]::-webkit-search-cancel-button {
+  display: none; }
+
+input[type=search]::-webkit-search-decoration, input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-results-button, input[type=search]::-webkit-search-results-decoration {
   display: none; }
 
 ::-webkit-input-placeholder {
@@ -738,9 +635,182 @@ textarea::placeholder {
       color: #000; }
 
 .inpList > li {
+  position: relative;
   margin-top: 9px; }
   .inpList > li:first-child {
     margin-top: 0; }
+  .inpList > li label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    padding: 0 13px;
+    line-height: 45px;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 1.3rem;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+  .inpList > li input {
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
+    .inpList > li input:-moz-read-only {
+      padding-top: 12px; }
+    .inpList > li input:not(:focus):valid, .inpList > li input:focus, .inpList > li input:read-only {
+      padding-top: 12px; }
+      .inpList > li input:-moz-read-only + label {
+        top: -9px;
+        width: auto;
+        color: #2CA8EC;
+        font-size: 0.9rem; }
+      .inpList > li input:not(:focus):valid + label, .inpList > li input:focus + label, .inpList > li input:read-only + label {
+        top: -9px;
+        width: auto;
+        color: #2CA8EC;
+        font-size: 0.9rem; }
+        .inpList > li input:-moz-read-only + label span {
+          display: none; }
+        .inpList > li input:not(:focus):valid + label span, .inpList > li input:focus + label span, .inpList > li input:read-only + label span {
+          display: none; }
+      .inpList > li input:-moz-read-only ~ .icDel {
+        display: block; }
+      .inpList > li input:not(:focus):valid ~ .icDel, .inpList > li input:focus ~ .icDel, .inpList > li input:read-only ~ .icDel {
+        display: block; }
+  .inpList > li .icDel {
+    display: none;
+    position: absolute;
+    top: 13px;
+    right: 13px;
+    width: 19px;
+    height: 19px;
+    background: url(../images/common/spr_icon.svg) no-repeat -72px 0/250px auto; }
+  .inpList > li.inpCert {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%; }
+    .inpList > li.inpCert .certWrap {
+      width: 100%;
+      position: relative; }
+    .inpList > li.inpCert .btnM {
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 88px;
+              flex: 0 0 88px;
+      margin: 0 0 0 10px; }
+  .inpList > li.inpCertTime .certTime {
+    position: absolute;
+    top: 12px;
+    right: 19px;
+    color: #FF6D6D;
+    font-size: 1.3rem;
+    font-weight: 500; }
+  .inpList > li.inpWrap label {
+    position: static;
+    height: auto;
+    margin-bottom: 6px;
+    padding: 0;
+    color: #2CA8EC;
+    font-size: 1.2rem;
+    line-height: 1.5; }
+
+.selectWrap {
+  position: relative;
+  height: 45px; }
+  .selectWrap select {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    width: 100%;
+    border: none;
+    height: 43px;
+    padding: 0 14px;
+    color: rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+    border: 1px solid #7D7D7D;
+    background: #fff; }
+    .selectWrap select:focus {
+      border-color: #2CA8EC;
+      outline: 0; }
+  .selectWrap:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 14px;
+    height: 14px;
+    margin-top: -7px;
+    margin-left: -7px;
+    left: auto;
+    margin-left: 0;
+    right: 15px;
+    width: 6px;
+    height: 6px;
+    margin-top: -6px;
+    border: solid #000;
+    border-width: 0 1px 1px 0;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg); }
+
+.searchWrap {
+  position: relative; }
+  .searchWrap input {
+    padding-right: 45px; }
+  .searchWrap button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px; }
+    .searchWrap button:after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 25px;
+      height: 25px;
+      margin-top: -12.5px;
+      margin-left: -12.5px;
+      background: url(../images/common/ico_search01.svg) no-repeat 0 0/25px auto; }
+
+.laySelectbox {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  max-height: calc(100vh - 67px);
+  padding: 16px 0 0 0;
+  border-radius: 18px 18px 0 0;
+  -webkit-animation-name: layBtm;
+          animation-name: layBtm;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  z-index: 9999;
+  -webkit-box-shadow: 0px 10px 10px #000000;
+          box-shadow: 0px 10px 10px #000000;
+  background: #fff; }
+  .laySelectbox .selectInner {
+    overflow: auto;
+    max-height: calc(100vh - 83px);
+    border-top: 1px solid #D8D8D8; }
+    .laySelectbox .selectInner .selectList > li > a {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      display: block;
+      padding: 0 27px;
+      color: #222;
+      line-height: 47px;
+      border-top: 1px solid #D8D8D8;
+      font-weight: 500;
+      font-size: 1.8rem; }
+      .laySelectbox .selectInner .selectList > li > a.selON {
+        background: #3324240F; }
+    .laySelectbox .selectInner .selectList > li:first-child a {
+      border-top: 0; }
 
 /* skipmenu */
 .skip a {
@@ -1160,7 +1230,7 @@ nav {
   margin: -1px !important;
   clip: rect(0 0 0 0); }
 
-.searchWrap button, #wrapper header .titMain a, #wrapper header .topUtil button, #wrapper header .btprev, #wrapper header .btPrev, nav > .inner > a, .menuList .closeNavi, .layPop.layCent .closeL, .frmFavo label, .inpList > li .icDel, .closeL, .topSearch > button, .inquiryCont .inquiryWrite .textArea textarea + label, .sightsList > ul > li .frmFavo label, .loginArea .inpList > li .icDel {
+.inpList > li .icDel, .searchWrap button, #wrapper header .titMain a, #wrapper header .topUtil button, #wrapper header .btprev, #wrapper header .btPrev, nav > .inner > a, .menuList .closeNavi, .layPop.layCent .closeL, .frmFavo label, .closeL, .topSearch > button, .inquiryCont .inquiryWrite .textArea textarea + label, .sightsList > ul > li .frmFavo label {
   overflow: hidden;
   text-indent: -9999px; }
 
@@ -1451,130 +1521,6 @@ nav {
       .switch [type="checkbox"]:checked::before {
         left: calc(100% - 20px); }
 
-.inpList > li {
-  position: relative; }
-  .inpList > li label {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    width: auto;
-    padding: 0 13px;
-    line-height: 45px;
-    color: rgba(0, 0, 0, 0.6);
-    font-size: 1.3rem;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box; }
-  .inpList > li input, .inpList > li select {
-    -webkit-transition: 0.3s;
-    transition: 0.3s; }
-    .inpList > li input:-moz-read-only, .inpList > li select:-moz-read-only {
-      padding-top: 12px; }
-    .inpList > li input:not(:focus):valid, .inpList > li input:focus, .inpList > li input:read-only, .inpList > li select:not(:focus):valid, .inpList > li select:focus, .inpList > li select:read-only {
-      padding-top: 12px; }
-      .inpList > li input:-moz-read-only + label, .inpList > li select:-moz-read-only + label {
-        top: -9px;
-        width: auto;
-        color: #2CA8EC;
-        font-size: 0.9rem; }
-      .inpList > li input:not(:focus):valid + label, .inpList > li input:focus + label, .inpList > li input:read-only + label, .inpList > li select:not(:focus):valid + label, .inpList > li select:focus + label, .inpList > li select:read-only + label {
-        top: -9px;
-        width: auto;
-        color: #2CA8EC;
-        font-size: 0.9rem; }
-        .inpList > li input:-moz-read-only + label span, .inpList > li select:-moz-read-only + label span {
-          display: none; }
-        .inpList > li input:not(:focus):valid + label span, .inpList > li input:focus + label span, .inpList > li input:read-only + label span, .inpList > li select:not(:focus):valid + label span, .inpList > li select:focus + label span, .inpList > li select:read-only + label span {
-          display: none; }
-      .inpList > li input:-moz-read-only ~ .icDel, .inpList > li select:-moz-read-only ~ .icDel {
-        display: block; }
-      .inpList > li input:not(:focus):valid ~ .icDel, .inpList > li input:focus ~ .icDel, .inpList > li input:read-only ~ .icDel, .inpList > li select:not(:focus):valid ~ .icDel, .inpList > li select:focus ~ .icDel, .inpList > li select:read-only ~ .icDel {
-        display: block; }
-    .inpList > li input:-moz-read-only, .inpList > li select:-moz-read-only {
-      background: transparent;
-      color: #000; }
-    .inpList > li input:read-only, .inpList > li select:read-only {
-      background: transparent;
-      color: #000; }
-  .inpList > li .icDel {
-    display: none;
-    position: absolute;
-    top: 13px;
-    right: 13px;
-    width: 19px;
-    height: 19px;
-    background: url(../images/common/spr_icon.svg) no-repeat -72px 0/250px auto; }
-  .inpList > li .btnLineGray {
-    position: absolute;
-    top: 12px;
-    right: 13px; }
-  .inpList > li.inpCert {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 100%; }
-    .inpList > li.inpCert .certWrap {
-      width: 100%;
-      position: relative; }
-    .inpList > li.inpCert .btnM {
-      -webkit-box-flex: 0;
-          -ms-flex: 0 0 88px;
-              flex: 0 0 88px;
-      margin: 0 0 0 10px; }
-  .inpList > li.inpCertTime .certTime {
-    position: absolute;
-    top: 12px;
-    right: 19px;
-    color: #FF6D6D;
-    font-size: 1.3rem;
-    font-weight: 500; }
-  .inpList > li.multiForm {
-    padding-top: 20px; }
-    .inpList > li.multiForm > label {
-      padding: 0;
-      line-height: initial;
-      font-size: 0.9rem;
-      color: #2CA8EC; }
-
-.btnRadio {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 9px; }
-  .btnRadio > span {
-    position: relative;
-    width: 100%; }
-  .btnRadio input[type=radio] {
-    padding-top: 0;
-    width: 100%;
-    height: 45px;
-    border: 1px solid #c8c8c8;
-    border-radius: 5px;
-    background: #fff;
-    font-size: 1.3rem;
-    color: rgba(0, 0, 0, 0.6);
-    text-align: center; }
-    .btnRadio input[type=radio] + label {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      text-align: center; }
-    .btnRadio input[type=radio]:checked {
-      border-color: #2CA8EC;
-      color: #000; }
-      .btnRadio input[type=radio]:checked + label {
-        color: #000; }
-
 .point {
   font-size: inherit;
   color: #2CA8EC; }
@@ -1602,6 +1548,56 @@ nav {
 
 .floatingBtns .btnArea.noBg {
   background: transparent; }
+
+.inpList > li a {
+  position: absolute;
+  top: 13px;
+  right: 13px; }
+
+.btnInpWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 9px; }
+  .btnInpWrap .frmInp {
+    width: 100%;
+    min-height: initial; }
+    .btnInpWrap .frmInp label {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin: 0 !important;
+      height: 45px !important;
+      border-radius: 5px;
+      background: #fff;
+      border: 1px solid #7D7D7D;
+      font-size: 1.2rem !important;
+      color: rgba(0, 0, 0, 0.6) !important; }
+      .btnInpWrap .frmInp label::before, .btnInpWrap .frmInp label::after {
+        display: none; }
+    .btnInpWrap .frmInp input:checked + label {
+      border-color: #2CA8EC;
+      color: #2CA8EC !important; }
+
+.inpList > li .multiForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 9px; }
+  .inpList > li .multiForm > * {
+    width: 100%; }
 
 .btDark {
   border: none;
@@ -1635,9 +1631,10 @@ nav {
     background-image: url(../images/ico_modify.png); }
 
 .btnLine {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1647,12 +1644,17 @@ nav {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   height: 45px;
   border-radius: 999px;
   border: 2px solid #2CA8EC;
   background: #fff;
   -webkit-box-shadow: 0px 2px 10px #00000029;
-          box-shadow: 0px 2px 10px #00000029; }
+          box-shadow: 0px 2px 10px #00000029;
+  text-indent: 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s; }
   .btnLine > span {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1660,24 +1662,42 @@ nav {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    width: auto;
     font-weight: 700;
     font-size: 1.7rem;
-    color: #2CA8EC; }
-    .btnLine > span::before {
-      content: '';
-      display: -webkit-inline-box;
-      display: -ms-inline-flexbox;
-      display: inline-flex;
-      margin-right: 10px;
-      width: 20px;
-      height: 20px;
-      background-position: 0 0;
-      background-repeat: no-repeat;
-      background-size: 100%; }
-  .btnLine.exchange span::before {
+    color: #2CA8EC;
+    white-space: nowrap;
+    opacity: 1; }
+  .btnLine::before {
+    content: '';
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 100%; }
+  .btnLine > span, .btnLine::before {
+    -webkit-transition-delay: 0.1s;
+            transition-delay: 0.1s; }
+  .btnLine.exchange::before {
     width: 30px;
     height: 23px;
     background-image: url(../images/ico_exchange.png); }
+  .btnLine.inquiry::before {
+    width: 20px;
+    height: 20px;
+    background-image: url(../images/ico_inquiry.png); }
+  .btnLine.scroll {
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+    width: 45px; }
+    .btnLine.scroll > span {
+      overflow: hidden;
+      text-indent: -9999px;
+      opacity: 0; }
+    .btnLine.scroll::before {
+      margin: 0; }
 
 .btnLineGray {
   display: -webkit-inline-box;
@@ -1950,16 +1970,22 @@ nav {
               transform: translateY(-50%);
       font-size: 1rem;
       color: rgba(0, 0, 0, 0.6);
-      letter-spacing: -.8px;
       line-height: 1; }
+      .alimList > li > a .status > i {
+        display: block;
+        width: 120%;
+        margin-left: -2px;
+        font-style: normal;
+        -webkit-transform: scale(0.8);
+                transform: scale(0.8); }
       .alimList > li > a .status::before {
         content: '';
         display: block;
         width: 17px;
         height: 17px;
-        background: #707070; }
+        background: url(../images/ico_reply.png) no-repeat 0 0/100%; }
       .alimList > li > a .status.re::before {
-        background: #2CA8EC; }
+        background-image: url(../images/ico_reply_finish.png); }
     .alimList > li > a > b {
       display: block;
       margin-top: 2px;
@@ -2118,6 +2144,8 @@ nav {
         position: absolute;
         top: 50%;
         left: 15px;
+        -webkit-transform: scale(0.8);
+                transform: scale(0.8);
         font-style: normal;
         font-size: 1rem;
         color: #D8D8D8; }
@@ -2475,6 +2503,23 @@ nav {
       width: 1px;
       height: 11px;
       background: #707070; }
+
+.myInfoCont .btnWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 24px; }
+  .myInfoCont .btnWrap > a {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    margin: 0 0 15px auto;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #000; }
 
 .leaveCont .leaveTxt {
   font-weight: 500;
@@ -2926,65 +2971,6 @@ nav {
 
 .loginCheck {
   margin-top: 10px; }
-
-.loginArea .inpList > li {
-  position: relative; }
-  .loginArea .inpList > li label {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    width: 100%;
-    padding: 0 13px;
-    line-height: 45px;
-    color: rgba(0, 0, 0, 0.6);
-    font-size: 1.3rem;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box; }
-  .loginArea .inpList > li input {
-    -webkit-transition: 0.3s;
-    transition: 0.3s; }
-    .loginArea .inpList > li input:not(:focus):valid, .loginArea .inpList > li input:focus {
-      padding-top: 12px; }
-      .loginArea .inpList > li input:not(:focus):valid + label, .loginArea .inpList > li input:focus + label {
-        top: -9px;
-        width: auto;
-        color: #2CA8EC;
-        font-size: 0.9rem; }
-        .loginArea .inpList > li input:not(:focus):valid + label span, .loginArea .inpList > li input:focus + label span {
-          display: none; }
-      .loginArea .inpList > li input:not(:focus):valid ~ .icDel, .loginArea .inpList > li input:focus ~ .icDel {
-        display: block; }
-  .loginArea .inpList > li .icDel {
-    display: none;
-    position: absolute;
-    top: 13px;
-    right: 13px;
-    width: 19px;
-    height: 19px;
-    background: url(../images/common/spr_icon.svg) no-repeat -72px 0/250px auto; }
-  .loginArea .inpList > li.inpCert {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 100%; }
-    .loginArea .inpList > li.inpCert .certWrap {
-      width: 100%;
-      position: relative; }
-    .loginArea .inpList > li.inpCert .btnM {
-      -webkit-box-flex: 0;
-          -ms-flex: 0 0 88px;
-              flex: 0 0 88px;
-      margin: 0 0 0 10px; }
-  .loginArea .inpList > li.inpCertTime .certTime {
-    position: absolute;
-    top: 12px;
-    right: 19px;
-    color: #FF6D6D;
-    font-size: 1.3rem;
-    font-weight: 500; }
 
 .loginArea .btnDefault {
   margin-top: 35px; }

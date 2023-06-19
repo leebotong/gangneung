@@ -101,54 +101,6 @@
 	}
 }
 
-.inpList{
-	> li{position:relative;
-		label{position:absolute;top:0;left:0;display:block;width:auto;padding:0 13px;line-height:45px;color:$col_b60;font-size:rem(13px);transition:0.3s;box-sizing:border-box}
-		input, select{transition:0.3s;
-			&:not(:focus):valid, &:focus, &:read-only{padding-top:12px;
-				+ label{top:-9px;width:auto;color:$col_point1;font-size:rem(9px);
-					span{display:none}
-				}
-				~ .icDel{display:block}
-			}
-			&:read-only{background:transparent;color:$col_black;}
-		}
-		.icDel{@extend %textHidden;display:none;position:absolute;top:13px;right:13px;width:19px;height:19px;background:url(../images/common/spr_icon.svg) no-repeat -72px 0 / 250px auto}
-		.btnLineGray{position:absolute;top:12px;right:13px;}
-		&.inpCert{display:flex;width:100%;
-			.certWrap{width:100%;position:relative;
-				
-			}
-			.btnM{flex:0 0 88px;margin:0 0 0 10px}
-		}
-		&.inpCertTime{
-			.certTime{position:absolute;top:12px;right:19px;color:$col_point3;font-size:rem(13px);font-weight:$weight500;}
-		}
-		&.multiForm{padding-top:20px;
-			> label{padding:0;line-height:initial;font-size:rem(9px);color:$col_point1;}
-		}
-	}
-}
-
-.btnRadio{display:flex;justify-content:space-between;align-items:center;gap:9px;
-	> span{position:relative;width:100%;}
-	input[type=radio]{
-		padding-top:0;
-		width:100%;
-		height:45px;
-		border:1px solid $col_g600;
-		border-radius:5px;
-		background:$col_white;
-		font-size:rem(13px);
-		color:$col_b60;
-		text-align:center;
-		+ label{position:absolute;top:0;left:0;width:100%;height:100%;text-align:center;}
-		&:checked{border-color:$col_point1;color:$col_black;
-			+ label{color:$col_black;}
-		}
-	}
-}
-
 .point{font-size:inherit;color:$col_point1;}
 .titWrap{display:flex;justify-content:space-between;align-items:center;
 	.titDep-02{margin:0;}
@@ -160,22 +112,50 @@
 	.btnArea.noBg{background:transparent;}
 }
 
+.inpList > li a{position:absolute;top:13px;right:13px;}
+.btnInpWrap{display:flex;justify-content:space-between;gap:9px;
+	.frmInp{width:100%;min-height:initial;
+		label{display:flex;justify-content:center;align-items:center;
+			margin:0 !important;
+			height:45px !important;
+			border-radius:5px;
+			background:$col_white;
+			border:1px solid $col_g200;
+			font-size:rem(12px) !important;
+			color:$col_b60 !important;
+			&::before, &::after{display:none;}
+		}
+		input:checked + label{border-color:$col_point1;color:$col_point1 !important;}
+	}
+}
+.inpList > li .multiForm{display:flex;justify-content:space-between;gap:9px;
+	> *{width:100%;}
+}
+
 // button
 .btDark{border:none;background:$col_g800;color:$col_white;}
 .btnBlue{display:inline-flex;align-items:center;padding:0 10px;height:26px;background:$col_point1;border-radius:999px;font-size:rem(10px);color:$col_white;
 	&::before{content:'';margin-right:4px;width:12px;height:12px;background-position:0 0;background-repeat:no-repeat;background-size:100%;}
 	&.modify::before{width:12px;height:12px;background-image:url(../images/ico_modify.png);}
 }
-.btnLine{display:inline-flex;justify-content:center;align-items:center;flex:1;
+.btnLine{overflow:hidden;display:flex;justify-content:center;align-items:center;flex:1;
+	box-sizing:border-box;
 	height:45px;
 	border-radius:999px;
 	border:2px solid $col_point1;
 	background:$col_white;
 	box-shadow: 0px 2px 10px #00000029;
-	> span{display:flex;align-items:center;font-weight:$weight700;font-size:rem(17px);color:$col_point1;
-		&::before{content:'';display:inline-flex;margin-right:10px;width:20px;height:20px;background-position:0 0;background-repeat:no-repeat;background-size:100%;}
+	text-indent:0;
+	transition:all 0.5s;
+	> span{display:flex;align-items:center;width:auto;font-weight:$weight700;font-size:rem(17px);color:$col_point1;white-space:nowrap;opacity:1;}
+	&::before{content:'';margin-right:10px;width:20px;height:20px;background-position:0 0;background-repeat:no-repeat;background-size:100%;}
+	> span, &::before{transition-delay:0.1s;}
+	&.exchange::before{width:30px;height:23px;background-image:url(../images/ico_exchange.png);}
+	&.inquiry::before{width:20px;height:20px;background-image:url(../images/ico_inquiry.png);}
+	&.scroll{flex:none;width:45px;
+		> span{overflow:hidden;text-indent:-9999px;opacity:0;}
+		&::before{margin:0;}
 	}
-	&.exchange span::before{width:30px;height:23px;background-image:url(../images/ico_exchange.png);}
 }
 .btnLineGray{display:inline-flex;align-items:center;padding:0 10px;height:20px;border-radius:999px;border:1px solid $col_g900;background:$col_white;font-size:rem(10px);color:$col_b60;}
 .closeL{
@@ -276,9 +256,10 @@
 		> a{position:relative;display:block;
 			.date{color:$col_b60;}
 			.category{color:$col_point1;}
-			.status{position:absolute;top:50%;left:0;width:17px;transform:translateY(-50%);font-size:rem(10px);color:$col_b60;letter-spacing:-.8px;line-height:1;
-				&::before{content:'';display:block;width:17px;height:17px;background:$col_g900;}
-				&.re::before{background:$col_point1;}
+			.status{position:absolute;top:50%;left:0;width:17px;transform:translateY(-50%);font-size:rem(10px);color:$col_b60;line-height:1;
+				> i{display:block;width:120%;margin-left:-2px;font-style:normal;transform:scale(.8);}
+				&::before{content:'';display:block;width:17px;height:17px;background:url(../images/ico_reply.png) no-repeat 0 0 / 100%;}
+				&.re::before{background-image:url(../images/ico_reply_finish.png);}
 			}
 			> b{display:block;margin-top:2px;font-weight:$weight500;font-size:rem(13px);line-height:17px;color:$col_black;}
 		}
@@ -323,7 +304,7 @@
 			.txt{position:absolute;bottom:-16px;left:50%;transform:translateX(-50%);font-size:rem(10px);color:$col_g200;}
 			&::before{content:'';position:absolute;top:50%;left:0;z-index:-1;width:calc(100% + 26px);height:5px;background:$col-white;}
 			&:last-child::before{display:none;}
-			&::after{content:'완료';position:absolute;top:50%;left:15px;font-style:normal;font-size:rem(10px);color:$col_g300;}
+			&::after{content:'완료';position:absolute;top:50%;left:15px;transform:scale(.8);font-style:normal;font-size:rem(10px);color:$col_g300;}
 			&.complete{
 				.stamp{background-color:$col_point1;}
 				.txt{color:$col_black;}
@@ -459,6 +440,12 @@
 .myFooter{@extend %fullWidth;display:flex;justify-content:space-around;align-items:center;margin-top:27px;
 	> span{position:relative;flex:1;font-weight:$weight500;font-size:rem(15px);line-height:16px;color:$col_black;text-align:center;
 		&:not(:first-child)::before{content:'';position:absolute;top:50%;left:0;width:1px;height:11px;background:$col_g900;}
+	}
+}
+
+.myInfoCont{
+	.btnWrap{display:flex;flex-direction:column;margin-top:24px;
+		> a{align-self:flex-end;margin:0 0 15px auto;font-weight:$weight500;font-size:rem(15px);color:$col_black;}
 	}
 }
 

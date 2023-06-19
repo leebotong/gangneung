@@ -87,29 +87,6 @@
 //login
 .loginCheck{margin-top:10px}
 .loginArea{
-	.inpList{
-		> li{position:relative;
-			label{position:absolute;top:0;left:0;display:block;width:100%;padding:0 13px;line-height:45px;color:$col_b60;font-size:rem(13px);transition:0.3s;box-sizing:border-box}
-			input{transition:0.3s;
-				&:not(:focus):valid, &:focus{padding-top:12px;
-					+ label{top:-9px;width:auto;color:$col_point1;font-size:rem(9px);
-						span{display:none}
-					}
-					~ .icDel{display:block}
-				}
-			}
-			.icDel{@extend %textHidden;display:none;position:absolute;top:13px;right:13px;width:19px;height:19px;background:url(../images/common/spr_icon.svg) no-repeat -72px 0 / 250px auto}
-			&.inpCert{display:flex;width:100%;
-				.certWrap{width:100%;position:relative;
-					
-				}
-				.btnM{flex:0 0 88px;margin:0 0 0 10px}
-			}
-			&.inpCertTime{
-				.certTime{position:absolute;top:12px;right:19px;color:$col_point3;font-size:rem(13px);font-weight:$weight500;}
-			}
-		}
-	}
 	.btnDefault{margin-top:35px}
 }
 .loginBtns{display:flex;margin:20px -23px 0;

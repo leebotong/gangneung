@@ -15,25 +15,25 @@
   font-family: 'NotoSansKR';
   font-weight: 300;
   font-display: swap;
-  src: local("NotoSansKR Light"), url(../font/NotoSansKR-Light.woff) format("woff"), url(../font/NotoSansKR-Light.woff2) format("woff2"); }
+  src: local("NotoSansKR Light"), url(/font/NotoSansKR-Light.woff) format("woff"), url(/font/NotoSansKR-Light.woff2) format("woff2"); }
 
 @font-face {
   font-family: 'NotoSansKR';
   font-weight: 400;
   font-display: swap;
-  src: local("NotoSansKR Regular"), url(../font/NotoSansKR-Regular.woff) format("woff"), url(../font/NotoSansKR-Regular.woff2) format("woff2"); }
+  src: local("NotoSansKR Regular"), url(/font/NotoSansKR-Regular.woff) format("woff"), url(/font/NotoSansKR-Regular.woff2) format("woff2"); }
 
 @font-face {
   font-family: 'NotoSansKR';
   font-weight: 500;
   font-display: swap;
-  src: local("NotoSansKR Medium"), url(../font/NotoSansKR-Medium.woff) format("woff"), url(../font/NotoSansKR-Medium.woff2) format("woff2"); }
+  src: local("NotoSansKR Medium"), url(/font/NotoSansKR-Medium.woff) format("woff"), url(/font/NotoSansKR-Medium.woff2) format("woff2"); }
 
 @font-face {
   font-family: 'NotoSansKR';
   font-weight: 700;
   font-display: swap;
-  src: local("NotoSansKR Bold"), url(../font/NotoSansKR-Bold.woff) format("woff"), url(../font/NotoSansKR-Bold.woff2) format("woff2"); }
+  src: local("NotoSansKR Bold"), url(/font/NotoSansKR-Bold.woff) format("woff"), url(/font/NotoSansKR-Bold.woff2) format("woff2"); }
 
 .hidden, .frmInp input, .frmFavo input, .sightsList > ul > li .frmFavo input {
   overflow: hidden;
@@ -51,25 +51,25 @@
   font-family: 'NotoSansKR';
   font-weight: 300;
   font-display: swap;
-  src: local("NotoSansKR Light"), url(../font/NotoSansKR-Light.woff) format("woff"), url(../font/NotoSansKR-Light.woff2) format("woff2"); }
+  src: local("NotoSansKR Light"), url(/font/NotoSansKR-Light.woff) format("woff"), url(/font/NotoSansKR-Light.woff2) format("woff2"); }
 
 @font-face {
   font-family: 'NotoSansKR';
   font-weight: 400;
   font-display: swap;
-  src: local("NotoSansKR Regular"), url(../font/NotoSansKR-Regular.woff) format("woff"), url(../font/NotoSansKR-Regular.woff2) format("woff2"); }
+  src: local("NotoSansKR Regular"), url(/font/NotoSansKR-Regular.woff) format("woff"), url(/font/NotoSansKR-Regular.woff2) format("woff2"); }
 
 @font-face {
   font-family: 'NotoSansKR';
   font-weight: 500;
   font-display: swap;
-  src: local("NotoSansKR Medium"), url(../font/NotoSansKR-Medium.woff) format("woff"), url(../font/NotoSansKR-Medium.woff2) format("woff2"); }
+  src: local("NotoSansKR Medium"), url(/font/NotoSansKR-Medium.woff) format("woff"), url(/font/NotoSansKR-Medium.woff2) format("woff2"); }
 
 @font-face {
   font-family: 'NotoSansKR';
   font-weight: 700;
   font-display: swap;
-  src: local("NotoSansKR Bold"), url(../font/NotoSansKR-Bold.woff) format("woff"), url(../font/NotoSansKR-Bold.woff2) format("woff2"); }
+  src: local("NotoSansKR Bold"), url(/font/NotoSansKR-Bold.woff) format("woff"), url(/font/NotoSansKR-Bold.woff2) format("woff2"); }
 
 /* Common */
 html {
@@ -864,7 +864,7 @@ body > #wrapper {
         display: inline-block;
         width: 118px;
         height: 28px;
-        background: url(../images/common/spr_layout.svg) no-repeat 0 0/250px auto; }
+        background: url(/images/common/spr_layout.svg) no-repeat 0 0/250px auto; }
     #wrapper header .topUtil {
       position: absolute;
       top: 15px;
@@ -873,7 +873,7 @@ body > #wrapper {
         display: inline-block;
         width: 38px;
         height: 38px;
-        background: url(../images/common/spr_layout.svg) no-repeat 0 0/250px auto; }
+        background: url(/images/common/spr_layout.svg) no-repeat 0 0/250px auto; }
         #wrapper header .topUtil button.btSos {
           background-position: -158px 0; }
         #wrapper header .topUtil button.btSearch {
@@ -922,7 +922,7 @@ body > #wrapper {
         height: 26px;
         margin-top: -13px;
         margin-left: -13px;
-        background: url(../images/common/spr_layout.svg) no-repeat -123px -102px/250px auto; }
+        background: url(/images/common/spr_layout.svg) no-repeat -123px -102px/250px auto; }
     #wrapper header .titSub {
       padding: 0 42px;
       color: #2CA8EC;
@@ -975,7 +975,7 @@ nav {
         height: 31px;
         margin-top: -15.5px;
         margin-left: -15.5px;
-        background: url(../images/common/spr_layout.svg) no-repeat 0 0/250px auto; }
+        background: url(/images/common/spr_layout.svg) no-repeat 0 0/250px auto; }
       nav > .inner > a.btHome:after {
         background-position: 0 -38px; }
       nav > .inner > a.btWorking:after {
@@ -1038,7 +1038,7 @@ nav {
           width: 31px;
           height: 31px;
           margin-top: -15px;
-          background: url(../images/common/spr_layout.svg) no-repeat 0 0/250px auto; }
+          background: url(/images/common/spr_layout.svg) no-repeat 0 0/250px auto; }
       .menuList .navList ul > li:first-child {
         border-top: 0; }
       .menuList .navList ul > li.gnb01 > a:before {
@@ -1086,7 +1086,7 @@ nav {
         margin-left: -15.5px;
         top: 20px;
         margin-top: 0;
-        background: url(../images/common/spr_layout.svg) no-repeat 0 -38px/250px auto; }
+        background: url(/images/common/spr_layout.svg) no-repeat 0 -38px/250px auto; }
       .menuList .navUtil > a.utilMy:after {
         background-position: -96px -38px; }
       .menuList .navUtil > a.utilNoti:after {
@@ -1107,7 +1107,7 @@ nav {
       height: 26px;
       margin-top: -13px;
       margin-left: -13px;
-      background: url(../images/common/spr_layout.svg) no-repeat -96px -102px/250px auto; }
+      background: url(/images/common/spr_layout.svg) no-repeat -96px -102px/250px auto; }
 
 /* layer popup */
 .layPop {
@@ -1206,7 +1206,7 @@ nav {
       width: 31.5px;
       height: 31.5px;
       border-radius: 50%;
-      background: url(../images/common/spr_layout.svg) no-repeat -64px -102px/250px auto; }
+      background: url(/images/common/spr_layout.svg) no-repeat -64px -102px/250px auto; }
 
 .dimmed {
   display: none;
@@ -1238,31 +1238,34 @@ nav {
   font-family: 'NotoSansKR';
   font-weight: 300;
   font-display: swap;
-  src: local("NotoSansKR Light"), url(../font/NotoSansKR-Light.woff) format("woff"), url(../font/NotoSansKR-Light.woff2) format("woff2"); }
+  src: local("NotoSansKR Light"), url(/font/NotoSansKR-Light.woff) format("woff"), url(/font/NotoSansKR-Light.woff2) format("woff2"); }
 
 @font-face {
   font-family: 'NotoSansKR';
   font-weight: 400;
   font-display: swap;
-  src: local("NotoSansKR Regular"), url(../font/NotoSansKR-Regular.woff) format("woff"), url(../font/NotoSansKR-Regular.woff2) format("woff2"); }
+  src: local("NotoSansKR Regular"), url(/font/NotoSansKR-Regular.woff) format("woff"), url(/font/NotoSansKR-Regular.woff2) format("woff2"); }
 
 @font-face {
   font-family: 'NotoSansKR';
   font-weight: 500;
   font-display: swap;
-  src: local("NotoSansKR Medium"), url(../font/NotoSansKR-Medium.woff) format("woff"), url(../font/NotoSansKR-Medium.woff2) format("woff2"); }
+  src: local("NotoSansKR Medium"), url(/font/NotoSansKR-Medium.woff) format("woff"), url(/font/NotoSansKR-Medium.woff2) format("woff2"); }
 
 @font-face {
   font-family: 'NotoSansKR';
   font-weight: 700;
   font-display: swap;
-  src: local("NotoSansKR Bold"), url(../font/NotoSansKR-Bold.woff) format("woff"), url(../font/NotoSansKR-Bold.woff2) format("woff2"); }
+  src: local("NotoSansKR Bold"), url(/font/NotoSansKR-Bold.woff) format("woff"), url(/font/NotoSansKR-Bold.woff2) format("woff2"); }
 
 .mapArea, .courseList > li, .searchList, .alimList, .sightsCont .photoWrap, .sightsCont .infoDesk, .myList, .myFooter, .faqViewCont .faqCont, .inquiryView, .inquiryCont .qnaNoti {
   margin: 0 -23px; }
 
 .fixedBtmWrap .container {
   padding-bottom: 100px !important; }
+
+.titSub > button {
+  margin-left: 11px; }
 
 .frmFavo {
   position: absolute; }
@@ -1625,6 +1628,16 @@ nav {
     background-position: 0 0;
     background-repeat: no-repeat;
     background-size: 100%; }
+  .btnBlue.info::before {
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    background-image: url(../images/ico_info.png); }
+  .btnBlue.location::before {
+    width: 10px;
+    height: 12px;
+    background-color: #fff;
+    background-image: url(../images/ico_location.png); }
   .btnBlue.modify::before {
     width: 12px;
     height: 12px;
@@ -3098,18 +3111,18 @@ nav {
 
 .CompWrap {
   height: calc(100vh - 67px);
-  background: url(../images/img_comp01.jpg) no-repeat 50% 100%/100% auto; }
+  background: url(/images/img_comp01.jpg) no-repeat 50% 100%/100% auto; }
   .CompWrap .compInner {
     padding: 78px 23px 0 23px;
     text-align: center;
-    background: url(../images/img_comp02.jpg) no-repeat 0 calc(100% - 45px)/100% auto; }
+    background: url(/images/img_comp02.jpg) no-repeat 0 calc(100% - 45px)/100% auto; }
     .CompWrap .compInner .txt {
       display: block;
       padding-top: 120px;
       color: #000;
       font-size: 2rem;
       font-weight: 700;
-      background: url(../images/bg_comp.png) no-repeat 50% 0/81px auto; }
+      background: url(/images/bg_comp.png) no-repeat 50% 0/81px auto; }
       .CompWrap .compInner .txt em {
         color: #2CA8EC; }
     .CompWrap .compInner .date {
@@ -3126,7 +3139,7 @@ nav {
   color: #000;
   font-size: 1.5rem;
   font-weight: 700;
-  background: url(../images/img_register.svg) no-repeat 2px 0/52px auto; }
+  background: url(/images/img_register.svg) no-repeat 2px 0/52px auto; }
   .txtRegist em {
     color: #2CA8EC; }
 

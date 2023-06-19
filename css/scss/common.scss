@@ -219,6 +219,7 @@ textarea::placeholder{font-size:rem(14px)}
 			}
 		}
 		.icDel{@extend %textHidden;display:none;position:absolute;top:13px;right:13px;width:19px;height:19px;background:url(../images/common/spr_icon.svg) no-repeat -72px 0 / 250px auto}
+		
 		&.inpCert{display:flex;width:100%;
 			.certWrap{width:100%;position:relative;
 				

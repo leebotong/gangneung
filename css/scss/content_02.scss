@@ -8,6 +8,8 @@
 
 .fixedBtmWrap .container{padding-bottom:100px !important;}
 
+.titSub > button{margin-left:11px;}
+
 .frmFavo{position:absolute;
 	input{@extend %hidden;
 		&:checked + label{background-position:-23px 0}
@@ -136,6 +138,8 @@
 .btDark{border:none;background:$col_g800;color:$col_white;}
 .btnBlue{display:inline-flex;align-items:center;padding:0 10px;height:26px;background:$col_point1;border-radius:999px;font-size:rem(10px);color:$col_white;
 	&::before{content:'';margin-right:4px;width:12px;height:12px;background-position:0 0;background-repeat:no-repeat;background-size:100%;}
+	&.info::before{width:10px;height:10px;background-color:$col_white;background-image:url(../images/ico_info.png);}
+	&.location::before{width:10px;height:12px;background-color:$col_white;background-image:url(../images/ico_location.png);}
 	&.modify::before{width:12px;height:12px;background-image:url(../images/ico_modify.png);}
 }
 .btnLine{overflow:hidden;display:flex;justify-content:center;align-items:center;flex:1;
